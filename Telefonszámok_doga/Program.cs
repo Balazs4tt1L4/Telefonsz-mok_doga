@@ -30,7 +30,12 @@
                 }
                 else if (valaszt == "1")
                 {
-                    //1
+                    Console.Clear();
+                    //Mindent megjelenít
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        Console.WriteLine(telefonsz);
+                    }
                 }
                 else if (valaszt == "2")
                 {
