@@ -72,7 +72,23 @@
                 }
                 else if (valaszt == "4")
                 {
-                    //4
+                    //Számjegyeket és + jelet tartalmazók
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        bool jo = true;
+                        foreach (var karakt in telefonsz)
+                        {
+                            if (!char.IsDigit(karakt) && karakt != '+')
+                            {
+                                jo = false;
+                            }
+                        }
+                        if (jo)
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else if (valaszt == "5")
                 {
