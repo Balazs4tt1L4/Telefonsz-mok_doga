@@ -104,7 +104,30 @@
                 }
                 else if (valaszt == "6")
                 {
-                    //6
+                    //Számjegy és + jel, de csak elől lehet a + jel
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        bool jo = true;
+                        for (int i = 0; i < telefonsz.Length; i++)
+                        {
+                            if (i == 0)
+                            {
+                                if (!char.IsDigit(telefonsz[i]) && telefonsz[i] != '+')
+                                    jo = false;
+                                
+                            }
+                            else
+                            {
+                                if (!char.IsDigit(telefonsz[i]))
+                                    jo = false;
+                                
+                            }
+                        }
+                        if (jo)
+                            Console.WriteLine(telefonsz);
+                        
+                    }
                 }
                 else if (valaszt == "7")
                 {
