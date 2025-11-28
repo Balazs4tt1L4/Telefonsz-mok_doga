@@ -143,7 +143,15 @@
                 }
                 else if (valaszt == "8")
                 {
-                    //
+                    //( és vagy ) jel van benne
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        if (telefonsz.Contains('(') || telefonsz.Contains(')'))
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else
                 {
