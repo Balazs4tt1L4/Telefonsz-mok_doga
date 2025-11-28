@@ -92,7 +92,15 @@
                 }
                 else if (valaszt == "5")
                 {
-                    //5
+                    //Azok amiben 6-os szám van
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        if (telefonsz.Contains('6'))
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else if (valaszt == "6")
                 {
