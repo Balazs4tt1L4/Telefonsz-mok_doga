@@ -39,7 +39,24 @@
                 }
                 else if (valaszt == "2")
                 {
-                    //2
+                    //Számjegyeket tartalmazókat írja ki
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        bool szamjegy = true;
+                        foreach (var karakt in telefonsz)
+                        {
+                            if (!char.IsDigit(karakt))
+                            {
+                                szamjegy = false;
+                            
+                            }
+                        }
+                        if (szamjegy)
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else if (valaszt == "3")
                 {
