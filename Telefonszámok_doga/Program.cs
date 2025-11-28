@@ -60,7 +60,15 @@
                 }
                 else if (valaszt == "3")
                 {
-                    //3
+                    //12 karakter hosszúakat írja ki
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        if (telefonsz.Length == 12)
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else if (valaszt == "4")
                 {
