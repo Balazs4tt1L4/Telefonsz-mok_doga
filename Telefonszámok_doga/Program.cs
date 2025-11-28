@@ -131,11 +131,19 @@
                 }
                 else if (valaszt == "7")
                 {
-                    //7
+                    //Csak 06-tal kezdődő
+                    Console.Clear();
+                    foreach (var telefonsz in telefonszamok)
+                    {
+                        if (telefonsz[0] == '0' && telefonsz[1] == '6')
+                        {
+                            Console.WriteLine(telefonsz);
+                        }
+                    }
                 }
                 else if (valaszt == "8")
                 {
-                    //8
+                    //
                 }
                 else
                 {
