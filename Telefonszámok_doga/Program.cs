@@ -4,7 +4,62 @@
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("0 Kilépés");
+                Console.WriteLine("1 Összes telefonszám");
+                Console.WriteLine("2 Számjegyeket tartalmazók");
+                Console.WriteLine("3 12 karakter hosszúak");
+                Console.WriteLine("4 Számjegyeket és + jelet tartalmazók");
+                Console.WriteLine("5 Azok amiben 6-os szám van");
+                Console.WriteLine("6 Számjegy és + jel, de csak elől lehet a + jel");
+                Console.WriteLine("7 Csak 06-tal kezdődő");
+                Console.WriteLine("8 ( és vagy ) jel van benne");
+                string valaszt = Console.ReadLine();
 
+                if (valaszt == "0")
+                {
+                    return;
+                }
+                else if (valaszt == "1")
+                {
+                    //1
+                }
+                else if (valaszt == "2")
+                {
+                    //2
+                }
+                else if (valaszt == "3")
+                {
+                    //3
+                }
+                else if (valaszt == "4")
+                {
+                    //4
+                }
+                else if (valaszt == "5")
+                {
+                    //5
+                }
+                else if (valaszt == "6")
+                {
+                    //6
+                }
+                else if (valaszt == "7")
+                {
+                    //7
+                }
+                else if (valaszt == "8")
+                {
+                    //8
+                }
+                else
+                {
+                    Console.WriteLine("Nincs ilyen parancs!");
+                }
+                Console.ReadKey();
+            }
         }
     }
 }
